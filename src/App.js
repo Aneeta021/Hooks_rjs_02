@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./Components/Home/Home";
+import UseState from "./Components/UseState/UseState";
+import UseEffect from "./Components/UseEffect/UseEffect";
+import ResizeComp from "./Components/UseEffect/ResizeComp";
+import Fetching from "./Components/UseEffect/Fetching";
+import UseMemo from "./Components/UseMemo/Memo";
+import UseCallback from "./Components/UseCallback/Parent";
+import Navbar from "./Components/Navbar/Navbar";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div>
+        <Router>
+           <Navbar />
+          <Routes>
+            <Route path="/" element={<Home/>}></Route>
+            <Route path="/usestate" element={<UseState/>}></Route>
+            <Route path="/useeffect" element={<UseEffect/>}></Route>
+            <Route path="/resize" element={<ResizeComp/>}></Route>
+            <Route path="/fetching" element={<Fetching/>}></Route>
+            <Route path="/usememo" element={<UseMemo/>}></Route>
+            <Route path="/usecallback" element={<UseCallback/>}></Route>
+          </Routes>
+        </Router>
+      </div>
+    </>
   );
-}
+};
 
 export default App;
