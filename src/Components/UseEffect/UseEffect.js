@@ -9,9 +9,9 @@ const UseEffect = () => {
   //     setSeconds(prev => prev + 1);
   //   }, 1000);
 
-    // Cleanup
+  // Cleanup
   //   return () => clearInterval(interval);
-  // }, []); 
+  // }, []);
 
   //  Variation #_01..........rener every time
   // useEffect(() => {
@@ -43,15 +43,15 @@ const UseEffect = () => {
 
   return (
     <>
-      <div className="d-flex flex-column justify-content-center align-items-center bg-dark text-white vh-100 ">
+      <div className="d-flex flex-column justify-content-center align-items-center  text-white vh-100"  style={{ backgroundColor: '#313848' }}>
         <h2>UseEffect</h2>
         <h2>{count}</h2>
         <button className="border-0 px-4 py-2 text-black" onClick={click}>
           Click me
         </button>
-        <br/>
-        <hr/>
-         <p className="text-white">{seconds} seconds passed:</p>
+        <br />
+        <hr />
+        <p className="text-white">{seconds} seconds passed:</p>
       </div>
     </>
   );

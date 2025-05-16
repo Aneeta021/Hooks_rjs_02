@@ -17,7 +17,10 @@ const ResizeComp = () => {
 
   return (
     <>
-      <div className="d-flex flex-column justify-content-start align-items-center bg-dark text-white vh-100 ">
+      <div
+        className="d-flex flex-column justify-content-start align-items-center text-white vh-100 "
+        style={{ backgroundColor: "#1c2a4b" }}
+      >
         <h2>UseEffect</h2>
 
         <br />
