@@ -6,6 +6,7 @@ const Child = React.memo((props) => {
   const btnclick = () => {
     setValue(value + 1);
   };
+ 
   return (
     <>
       <div className=" text-white d-flex justify-content-center align-items-center flex-column">
@@ -26,5 +27,8 @@ const Child = React.memo((props) => {
 export default Child;
 //React.memo -> wrap -> component -> thats comp re-render when props chnge/update otherwise not that re-render
 //React.memo --> only on value
+//we can used the memo or React.memo, It wrap the component, 2 whys wrap the comp as in btm where export comp so just 
+// like React.memo(child) .....child here is a comp name so it wrap in it. 
+// If used the React word with memo thn not need the import, If we use memo in simple word then it firstly import like useState...useffect
 
-//if we're sending a function thn react.memo won't be able to save/protect from re-rendering
+//if we're sending a function thn react.memo won't be able to save/protect from re-rendering so where web used the 

@@ -28,3 +28,6 @@ const Memo = () => {
 };
 
 export default Memo;
+// useMemo memoize the only value
+// it used when i need the value/result->cache/memoize
+// It just last value store not in series so  

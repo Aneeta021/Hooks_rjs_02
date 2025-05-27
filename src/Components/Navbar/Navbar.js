@@ -38,6 +38,11 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="nav-item">
+                <Link className="nav-link" to="/redux">
+                  Redux
+                </Link>
+              </li>
+              <li className="nav-item">
                 <Link className="nav-link" to="/usestate">
                   UseState
                 </Link>
@@ -54,7 +59,97 @@ const Navbar = () => {
                 </Link>
                 <ul className="dropdown-menu bg-dark">
                   <li>
-                    <Link className="dropdown-item text-white" to="/useeffect ">UseEffect</Link>
+                    <Link className="dropdown-item text-white" to="/useeffect ">
+                      UseEffect
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item text-white" to="/resize">
+                      ResizeComp
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item text-white" to="/fetching">
+                      Fetching
+                    </Link>
+                  </li>
+                </ul>
+              </li>
+              <li className="nav-item">
+                {/* <Link className="nav-link" to="/resize">
+                  ResizeComp
+                </Link> */}
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/usememo">
+                  UseMemo
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/usecallback">
+                  UseCallback
+                </Link>
+              </li>
+              <li className="nav-item dropdown">
+                <Link
+                  className="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="true"
+                >
+                  UseContext
+                </Link>
+                <ul className="dropdown-menu bg-dark">
+                  <li>
+                    <Link
+                      className="dropdown-item text-white"
+                      to="/usecontext "
+                    >
+                      UseContext
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item text-white" to="/compa">
+                      CompA
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item text-white" to="/compb">
+                      CompB
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item text-white" to="/compc">
+                      CompC
+                    </Link>
+                  </li>
+                  <li>
+                    <hr className="dropdown-divider" />
+                  </li>
+                  <li className="nav-item submenu ">
+                    <Link
+                      className="dropdown-item text-white dropdown-toggle"
+                      to="#"
+                    >
+                      SubMenu
+                    </Link>
+                    <ul>
+                      <li>
+                        <Link className="dropdown-item text-white" to="/theme">
+                          Theme
+                        </Link>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li className="nav-item dropdown">
+                <ul className="dropdown-menu bg-dark">
+                  <li>
+                    <Link className="dropdown-item text-white" to="/useeffect ">
+                      UseEffect
+                    </Link>
                   </li>
                   <li>
                     <Link className="dropdown-item text-white" to="/resize">
@@ -75,26 +170,16 @@ const Navbar = () => {
                     </Link>
                   </li> */}
                 </ul>
-              </li>
-              <li className="nav-item">
-                {/* <Link className="nav-link" to="/resize">
-                  ResizeComp
-                </Link> */}
-              </li>
-              <li className="nav-item">
-                {/* <Link className="nav-link" to="/fetching">
-                  Fetching
-                </Link> */}
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/usememo">
-                  UseMemo
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/usecallback">
-                  UseCallback
-                </Link>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/reducer">
+                    UseReducer
+                  </Link>
+                </li>
+                {/* <li className="nav-item">
+                  <Link className="nav-link" to="/redux">
+                    Redux
+                  </Link>
+                </li> */}
               </li>
             </ul>
           </div>
